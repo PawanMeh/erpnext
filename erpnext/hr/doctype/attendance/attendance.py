@@ -83,8 +83,7 @@ def add_attendance(events, start, end, conditions=None):
 			"name": d.name,
 			"doctype": "Attendance",
 			"date": d.attendance_date,
-			"title": cstr(d.status),
-			"docstatus": d.docstatus
+			"title": cstr(d.status)
 		}
 		if e not in events:
 			events.append(e)
